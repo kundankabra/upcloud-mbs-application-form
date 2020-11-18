@@ -3,7 +3,90 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Mbs-app-form.css'
 
 
-function Forms() {
+class Forms extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          fname: "",
+          mname: "",
+          lname: "",
+          gender: null,
+          dob: "",
+          altNum: "",
+          address: "",
+          acadQual: "",
+          examBody: "",
+          yearPass: "",
+          regNum: "",
+          dateReg: "",
+          nameofBoard: "",
+          practitioner: null,
+          scientificPub: null,
+          titleofPaper: "",
+          nimaBefore: null,
+          branch: null,
+          reasonDiscontinue: ""
+    
+    
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+      }
+    
+      handleChange(e) {
+        this.setState({ [e.target.name]: e.target.value });
+        console.log(this.state);
+      }
+
+      handleSubmit(e) {
+        e.preventDefault();
+        const { altNum }= this.state.altNum;
+        if(altNum=="")
+        {
+          document.getElementById("messages").innerHTML="**PLEASE FILL MOBILE NO.";
+          return false;
+        }
+        if(isNaN(altNum))
+        {
+          document.getElementById("messages").innerHTML="**ENTER NUMERIC VALUES ONLY";
+          return false;
+        }
+        if(altNum.length<10)
+        {
+          document.getElementById("messages").innerHTML="**MOBILE NO. MUST HABE 10 DIGITS ONLY";
+          return false;
+        }
+        
+        if(altNum.length>10)
+        {
+          document.getElementById("messages").innerHTML="**MOBILE NO. MUST HAVE 10 DIGITS ONLY";
+          return false;
+        }
+        
+    
+        const { fname }= this.state.fname;
+        const { mname }= this.state.mname;
+        const { lname }= this.state.lname;
+        if(!isNaN(fname))
+        {
+          document.getElementById("messages").innerHTML="**ENTER CHARACTER VALUES ONLY";
+          return false;
+        }
+        if(!isNaN(mname))
+        {
+          document.getElementById("messages").innerHTML="**ENTER CHARACTER VALUES ONLY";
+          return false;
+        }
+        if(!isNaN(lname))
+        {
+          document.getElementById("messages").innerHTML="**ENTER CHARACTER VALUES ONLY";
+          return false;
+        }
+        console.log(this.state);
+      }
+    
+    
+    render() {
     return (
         <div className="container Mbs-app-form_container">
             <div className="row">   
@@ -20,38 +103,39 @@ function Forms() {
             </div>
             </div>
             </div>
-            <form>
+            {/* form starts from here */}
+            <form onSubmit={this.handleSubmit}>
                 <div className="Mbs-app-form_personal-details">
                     <div className="Mbs-app-form_form-sub-heading">
                      Personal Details
                     </div>
                     <div className="form-row Mbs-app-form_pd-1">
-                    <div className="col-sm-2 col-xs-12 ">
-                        <input type="text" className="form-control"  name="fname" id="fname"  placeholder=" "/>
+                    <div className="col-md-2 col-sm-3 col-xs-12 ">
+                        <input required type="text" className="form-control" title="*ENTER CHARACTER VALUES ONLY"  pattern="[A-Za-z]{1,32}" name="fname" id="fname"  placeholder=" "/>
                         <span>First Name</span>    
                     </div>
-                    <div class="col-sm-2 col-xs-12">
-                        <input type="text" className="form-control" name="mname" id="mname" placeholder=" " />
+                    <div class="col-md-2 col-sm-3 col-xs-12">
+                        <input required type="text" className="form-control" title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" name="mname" id="mname" placeholder=" " />
                         <span>Middle Name</span>
                     </div>
-                    <div class="col-sm-2 col-xs-12">
-                        <input type="text" className="form-control" name="lname" id="lname" placeholder=" " />
+                    <div class="col-md-2 col-sm-3 col-xs-12">
+                        <input required type="text" className="form-control" title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" name="lname" id="lname" placeholder=" " />
                         <span>Last Name</span>
                     </div>
-                    <div className="col-sm-2 col-xs-12">
-                        <select class="form-control" id="gender">
+                    <div className="col-md-2 col-sm-3 col-xs-12">
+                        <select required class="form-control" id="gender" name="gender">
                         <option value="" disabled selected hidden>Gender</option>
                         <option value="M">Male</option>
                         <option value="F">Female</option>
                         </select>
                     </div>
                     {/* date is not coming on placeholder */}
-                    <div className="col-sm-2 col-xs-12">
-                        <input type="date" className="form-control" />
+                    <div className="col-md-2 col-sm-3 col-xs-12">
+                        <input required type="date" name="dob" className="form-control Mbs-app-form_dob" />
                         <span>Date of Birth</span>
                     </div>
-                    <div className="col-sm-2 col-xs-12">
-                        <select class="form-control" id="age">
+                    <div className="col-md-2 col-sm-3 col-xs-12">
+                        <select required class="form-control" id="age">
                         <option value="" disabled selected hidden>Age</option>
                         <option value="A">1-6</option>
                         <option value="B">6-12</option>
@@ -64,79 +148,81 @@ function Forms() {
 
                     <div className="form-row Mbs-app-form_pd-2">
                         <div className="col-xs-12 col-sm-10">
-                        <textarea className="form-control address" aria-label="With textarea" placeholder=" "></textarea>
+                        <textarea required name="address" className="form-control address" aria-label="With textarea" placeholder=" "></textarea>
                         <span>Address</span> 
                         </div>
                         <div className="col-xs-12 col-sm-2">
                         <label for="pincode">PIN code:</label>
-                        <input type="text" className="form-control" />
+                        <input required nam="pinCode" type="text" title="Pin Code should be of 6 digits" pattern="[0-9]{6}" maxlength="6" minLength="6" className="form-control" />
                         </div>
                     </div>
 
                     <div className="form-row Mbs-app-form_pd-3">
                     <div className="col-sm-4 col-xs-12 ">
-                        <input type="email" className="form-control" placeholder=" " />
+                        <input required type="email" title="Should be of form nima@example.com" className="form-control" placeholder=" " />
                         <span>Email</span> 
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input type="tel" className="form-control" placeholder=" " />
+                        <input require name="Num" title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" type="tel" className="form-control" placeholder=" " />
                         <span>Residential Number</span> 
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input type="tel" className="form-control" placeholder=" " />
+                        <input required name="altNum" title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" type="tel" className="form-control" placeholder=" " />
                         <span>Clinic Number</span> 
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input type="tel" className="form-control" placeholder=" " />
+                        <input required name="altNum" title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" type="tel" className="form-control" placeholder=" " />
                         <span>Mobile Number</span> 
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input type="tel" className="form-control" placeholder=" " />
+                        <input required name="altNum" title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" type="tel" className="form-control" placeholder=" " />
                         <span>Alternate Number</span> 
                     </div>
                     </div>
                 </div>
                     
+                    {/* nominee details section begins from here */}
+
                 <div className="Mbs-app-form_nominee-details">
                     <div className="Mbs-app-form_form-sub-heading">
                         Nominee Details
                     </div>
                     <div className="form-row Mbs-app-form_pd-1">
                     <div className="col-sm-2 col-xs-12 ">
-                        <input type="text" className="form-control" placeholder=" " />
+                        <input required name="nom-fname" title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" type="text" className="form-control" placeholder=" " />
                         <span>First Name</span> 
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input type="text" className="form-control" placeholder=" " />
+                        <input required name="nom-mname" title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" type="text" className="form-control" placeholder=" " />
                         <span>Middle Name</span> 
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input type="text" className="form-control" placeholder=" " />
+                        <input required name="nom-lname" title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" type="text" className="form-control" placeholder=" " />
                         <span>Last Name</span> 
                     </div>
                     <div className="col-sm-2 col-xs-12">
-                    <input type="text" className="form-control" placeholder=" " />
+                    <input required name="nom-relation"  title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" type="text" className="form-control" placeholder=" " />
                         <span>Relation with Nominee</span> 
                     </div>
                     {/* date is not coming on placeholder */}
                     <div className="col-sm-2 col-xs-12">
-                        <input type="tel" className="form-control" placeholder=" " />
+                        <input required name="nom-mobNum" type="tel" title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}"  className="form-control" placeholder=" " />
                         <span>Mobile Number</span> 
                     </div>
                     <div className="col-sm-2 col-xs-12">
-                        <input type="tel" className="form-control" placeholder=" " />
+                        <input required name="nom-altNum" type="tel" title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" className="form-control" placeholder=" " />
                         <span>Alternate Number</span> 
                     </div>
                     </div>
 
                     <div className="form-row Mbs-app-form_pd-2">
                         <div className="col-xs-12 col-sm-10">
-                        <textarea className="form-control address" aria-label="With textarea" placeholder=" "></textarea>
+                        <textarea required name="nom-address" className="form-control address" aria-label="With textarea" placeholder=" "></textarea>
                         <span>Address</span>
                         </div>
                         <div className="col-xs-12 col-sm-2">
                         <label for="pincode">PIN code:</label>
-                        <input type="text" className="form-control" />
+                        <input required name="nom-pinCode" type="text" title="Pin Code should be of 6 digits" pattern="[0-9]{6}" className="form-control" />
                         </div>
                     </div>
                   
@@ -148,22 +234,22 @@ function Forms() {
                 </div>
                 <div className="form-row Mbs-app-form_pd-1">
                     <div className="col-sm-8 col-xs-12 ">
-                        <input type="text" className="form-control" placeholder=" " />
+                        <input required type="text" className="form-control" placeholder=" " />
                         <span>College Name</span>
                     </div>
                     <div class="col-sm-4 col-xs-12">
-                        <input type="text" className="form-control" placeholder=" " />
+                        <input required type="text" className="form-control" placeholder=" " />
                         <span>Degree</span>
                     </div>
                 </div>
                 <div className="form-row Mbs-app-form_pd-2">
                     <div className="col-sm-10 col-xs-12 ">
-                        <input type="text" className="form-control" placeholder=" " />
+                        <input required type="text" className="form-control" placeholder=" " />
                         <span>University/Faculty Name</span>
                     </div>
                     {/* what should be the type                */}
                     <div class="col-sm-2 col-xs-12">
-                        <input type="number" className="form-control" placeholder=" " />
+                        <input required type="number" className="form-control" placeholder=" " />
                         <span>Year of Passing</span>
                     </div>
                 </div>
@@ -175,15 +261,15 @@ function Forms() {
                 </div>
                 <div className="form-row Mbs-app-form_pd-1">
                     <div className="col-sm-2 col-xs-12 ">
-                        <input type="number" className="form-control" placeholder=" " />
+                        <input required type="number" className="form-control" placeholder=" " />
                         <span>Registration Number</span>
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input type="text"   className="form-control" placeholder=" " />
+                        <input required type="text"   className="form-control" placeholder=" " />
                         <span>Year of Registration</span>
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input type="text"   className="form-control" placeholder=" " />
+                        <input required type="text"   className="form-control" placeholder=" " />
                         <span style={{fontSize:'0.84rem'}}>Reg.Medical Council Board</span>
                     </div>
                     <div className="col-sm-2 col-xs-12">
@@ -194,12 +280,12 @@ function Forms() {
                         </select>
                     </div>
                     <div className="col-sm-2 col-xs-12 ">
-                        <input type="number" className="form-control" placeholder=" " />
+                        <input required type="number" className="form-control" placeholder=" " />
                         <span>Membership Number</span>
                     </div>
                     {/* date is not coming on placeholder */}
                     <div className="col-sm-2 col-xs-12">
-                        <input type="date" className="form-control" />
+                        <input required type="date" className="form-control" />
                         <span>Date of Birth</span>
                     </div>
                     </div>     
@@ -228,6 +314,7 @@ function Forms() {
             </form>
         </div>
     )
+}
 }
 
 
