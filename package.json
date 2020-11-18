@@ -2,7 +2,7 @@
   "name": "my-first-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://kundankabra.github.io/upcloud-mbs-application-form",
+  "homepage": "https://kundankabra.github.io/upcloud-mbs-application-form",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
