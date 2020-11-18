@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/upcloud-mbs-application-form/precache-manifest.605b4fb35bb4c29c4e82fb4d0e74ebfa.js"
+  "/upcloud-mbs-application-form/precache-manifest.9fff8091bbf9cf7f04552403674e2472.js"
 );
 
 self.addEventListener('message', (event) => {
