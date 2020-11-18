@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/upcloud-mbs-application-form/static/css/main.a4702893.chunk.css",
-    "main.js": "/upcloud-mbs-application-form/static/js/main.dd27f097.chunk.js",
-    "main.js.map": "/upcloud-mbs-application-form/static/js/main.dd27f097.chunk.js.map",
+    "main.css": "/upcloud-mbs-application-form/static/css/main.500a1753.chunk.css",
+    "main.js": "/upcloud-mbs-application-form/static/js/main.429e103a.chunk.js",
+    "main.js.map": "/upcloud-mbs-application-form/static/js/main.429e103a.chunk.js.map",
     "runtime-main.js": "/upcloud-mbs-application-form/static/js/runtime-main.23462c58.js",
     "runtime-main.js.map": "/upcloud-mbs-application-form/static/js/runtime-main.23462c58.js.map",
     "static/css/2.bb4ba17c.chunk.css": "/upcloud-mbs-application-form/static/css/2.bb4ba17c.chunk.css",
-    "static/js/2.3429aa2c.chunk.js": "/upcloud-mbs-application-form/static/js/2.3429aa2c.chunk.js",
-    "static/js/2.3429aa2c.chunk.js.map": "/upcloud-mbs-application-form/static/js/2.3429aa2c.chunk.js.map",
+    "static/js/2.9851201c.chunk.js": "/upcloud-mbs-application-form/static/js/2.9851201c.chunk.js",
+    "static/js/2.9851201c.chunk.js.map": "/upcloud-mbs-application-form/static/js/2.9851201c.chunk.js.map",
     "index.html": "/upcloud-mbs-application-form/index.html",
-    "precache-manifest.baa208278446d6a757f4ab805cf1dc26.js": "/upcloud-mbs-application-form/precache-manifest.baa208278446d6a757f4ab805cf1dc26.js",
+    "precache-manifest.605b4fb35bb4c29c4e82fb4d0e74ebfa.js": "/upcloud-mbs-application-form/precache-manifest.605b4fb35bb4c29c4e82fb4d0e74ebfa.js",
     "service-worker.js": "/upcloud-mbs-application-form/service-worker.js",
     "static/css/2.bb4ba17c.chunk.css.map": "/upcloud-mbs-application-form/static/css/2.bb4ba17c.chunk.css.map",
-    "static/css/main.a4702893.chunk.css.map": "/upcloud-mbs-application-form/static/css/main.a4702893.chunk.css.map",
-    "static/js/2.3429aa2c.chunk.js.LICENSE.txt": "/upcloud-mbs-application-form/static/js/2.3429aa2c.chunk.js.LICENSE.txt"
+    "static/css/main.500a1753.chunk.css.map": "/upcloud-mbs-application-form/static/css/main.500a1753.chunk.css.map",
+    "static/js/2.9851201c.chunk.js.LICENSE.txt": "/upcloud-mbs-application-form/static/js/2.9851201c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.23462c58.js",
     "static/css/2.bb4ba17c.chunk.css",
-    "static/js/2.3429aa2c.chunk.js",
-    "static/css/main.a4702893.chunk.css",
-    "static/js/main.dd27f097.chunk.js"
+    "static/js/2.9851201c.chunk.js",
+    "static/css/main.500a1753.chunk.css",
+    "static/js/main.429e103a.chunk.js"
   ]
 }
