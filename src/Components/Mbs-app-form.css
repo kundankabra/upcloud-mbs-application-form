@@ -111,8 +111,9 @@ span {
     border: 1px solid #CADEEF;
     border-radius: .50rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    margin-right: 5px;
+    margin-right: 8px;
     margin-left: 5px;
+    margin-top: 16px;
   }
 
 .Mbs-app-form_submit{
