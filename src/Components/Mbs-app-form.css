@@ -100,6 +100,11 @@ span {
     margin-top: 20px;
 }
 
+.upload{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
 .Mbs-app-form_btno {
     width: 19%;
     padding: .375rem .75rem;
@@ -111,7 +116,7 @@ span {
     border: 1px solid #CADEEF;
     border-radius: .50rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    margin-right: 8px;
+    margin-right: 4px;
     margin-left: 5px;
     margin-top: 16px;
   }
