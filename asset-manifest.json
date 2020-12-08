@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/upcloud-mbs-application-form/static/css/main.3712b6e9.chunk.css",
-    "main.js": "/upcloud-mbs-application-form/static/js/main.429e103a.chunk.js",
-    "main.js.map": "/upcloud-mbs-application-form/static/js/main.429e103a.chunk.js.map",
+    "main.css": "/upcloud-mbs-application-form/static/css/main.3e624c4f.chunk.css",
+    "main.js": "/upcloud-mbs-application-form/static/js/main.953fea24.chunk.js",
+    "main.js.map": "/upcloud-mbs-application-form/static/js/main.953fea24.chunk.js.map",
     "runtime-main.js": "/upcloud-mbs-application-form/static/js/runtime-main.23462c58.js",
     "runtime-main.js.map": "/upcloud-mbs-application-form/static/js/runtime-main.23462c58.js.map",
     "static/css/2.bb4ba17c.chunk.css": "/upcloud-mbs-application-form/static/css/2.bb4ba17c.chunk.css",
     "static/js/2.9851201c.chunk.js": "/upcloud-mbs-application-form/static/js/2.9851201c.chunk.js",
     "static/js/2.9851201c.chunk.js.map": "/upcloud-mbs-application-form/static/js/2.9851201c.chunk.js.map",
     "index.html": "/upcloud-mbs-application-form/index.html",
-    "precache-manifest.8f0ef7d063b2db3d049b5b94646ad69e.js": "/upcloud-mbs-application-form/precache-manifest.8f0ef7d063b2db3d049b5b94646ad69e.js",
+    "precache-manifest.e8c926c03133f25da96fa824538d4adb.js": "/upcloud-mbs-application-form/precache-manifest.e8c926c03133f25da96fa824538d4adb.js",
     "service-worker.js": "/upcloud-mbs-application-form/service-worker.js",
     "static/css/2.bb4ba17c.chunk.css.map": "/upcloud-mbs-application-form/static/css/2.bb4ba17c.chunk.css.map",
-    "static/css/main.3712b6e9.chunk.css.map": "/upcloud-mbs-application-form/static/css/main.3712b6e9.chunk.css.map",
+    "static/css/main.3e624c4f.chunk.css.map": "/upcloud-mbs-application-form/static/css/main.3e624c4f.chunk.css.map",
     "static/js/2.9851201c.chunk.js.LICENSE.txt": "/upcloud-mbs-application-form/static/js/2.9851201c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.23462c58.js",
     "static/css/2.bb4ba17c.chunk.css",
     "static/js/2.9851201c.chunk.js",
-    "static/css/main.3712b6e9.chunk.css",
-    "static/js/main.429e103a.chunk.js"
+    "static/css/main.3e624c4f.chunk.css",
+    "static/js/main.953fea24.chunk.js"
   ]
 }

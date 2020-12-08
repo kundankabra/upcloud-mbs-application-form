@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f339ef7c1bca715a89842cdde98dd456",
+    "revision": "9ceed423ee349071be923bbd2e80a069",
     "url": "/upcloud-mbs-application-form/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/upcloud-mbs-application-form/static/css/2.bb4ba17c.chunk.css"
   },
   {
-    "revision": "1bec0096ace8110f0ae5",
-    "url": "/upcloud-mbs-application-form/static/css/main.3712b6e9.chunk.css"
+    "revision": "401e266ec1aae077ba00",
+    "url": "/upcloud-mbs-application-form/static/css/main.3e624c4f.chunk.css"
   },
   {
     "revision": "8eceba8cebd289208c6a",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/upcloud-mbs-application-form/static/js/2.9851201c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1bec0096ace8110f0ae5",
-    "url": "/upcloud-mbs-application-form/static/js/main.429e103a.chunk.js"
+    "revision": "401e266ec1aae077ba00",
+    "url": "/upcloud-mbs-application-form/static/js/main.953fea24.chunk.js"
   },
   {
     "revision": "95e0ef07fb2b681aaf39",
