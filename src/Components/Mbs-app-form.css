@@ -70,7 +70,7 @@ span {
     color: #390969;
     padding: .175rem 0.5rem;
   }
-  
+  /* for address field */
   textarea:focus + span, textarea:not(:placeholder-shown) + span {
     opacity:1;
     transform: scale(0.8) translateY(-80%) translateX(-1px);
@@ -78,6 +78,13 @@ span {
     color: #390969;
     padding: .175rem 0.5rem;
   }
+
+/* for increasing height of textarea(addres field) */
+  textarea {
+    overflow: auto;
+    resize: vertical;
+    height: 69px !important;
+}
 
 /* personal details first row */
 .Mbs-app-form_pd-1{
@@ -106,7 +113,7 @@ span {
 }
 
 .Mbs-app-form_btno {
-    width: 19%;
+    width: 96%;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -116,8 +123,8 @@ span {
     border: 1px solid #CADEEF;
     border-radius: .50rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    margin-right: 4px;
-    margin-left: 5px;
+    margin-right: 50px;
+    margin-left: 19px;
     margin-top: 16px;
   }
 

@@ -25,9 +25,8 @@ class Forms extends React.Component {
           titleofPaper: "",
           nimaBefore: null,
           branch: null,
-          reasonDiscontinue: ""
-    
-    
+          reasonDiscontinue: "",
+          fileUploadState:"",
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -84,7 +83,18 @@ class Forms extends React.Component {
         }
         console.log(this.state);
       }
+
+    // for handling file upload 
+      fileUploadButton = () => {
+        document.getElementById('fileButton').click();
+        document.getElementById('fileButton').onchange = () =>{      
+        this.setState({
+            fileUploadState:document.getElementById('fileButton').value
+                });
+            }
+        }
     
+      
     
     render() {
     return (
@@ -291,6 +301,7 @@ class Forms extends React.Component {
                     </div>     
                 </div>      
 
+    {/* UPLOAD Documents section */}
                 <div className="Mbs-app-form_upload-documents">
                     <div className="Mbs-app-form_form-sub-heading">
                         Upload Documents
@@ -298,11 +309,36 @@ class Forms extends React.Component {
                     <div className="form-row upload">
                     {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> */}
                     {/* the above link should be included in index.html for icons */}
-                    <button class="btn Mbs-app-form_btno"><i class="fa fa-upload"></i> Birth Certificate</button>
-                    <button class="btn Mbs-app-form_btno"><i class="fa fa-upload"></i> Degree/Diploma Certificate</button>
-                    <button class="btn Mbs-app-form_btno"><i class="fa fa-upload"></i> Registration Certificate</button>
-                    <button class="btn Mbs-app-form_btno"><i class="fa fa-upload"></i> NIMA life Certificate</button>
-                    <button class="btn Mbs-app-form_btno"><i class="fa fa-upload"></i> Marriage Certificate</button>
+                    <div>
+                        <input id="fileButton" type="file" hidden />
+                        <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}><i class="fa fa-upload"></i> Birth Certificate</button>
+                        {this.state.fileUploadState}
+                    </div>
+                    
+                    <div>
+                        <input id="fileButton" type="file" hidden />
+                        <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}><i class="fa fa-upload"></i> Degree/Diploma Certificate</button>
+                        {this.state.fileUploadState}
+                    </div>
+                    
+                    <div>
+                    <input id="fileButton" type="file" hidden />
+                    <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}><i class="fa fa-upload"></i> Registration Certificate</button>
+                    {this.state.fileUploadState}
+                    </div>
+
+                    <div>
+                    <input id="fileButton" type="file" hidden />
+                    <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}><i class="fa fa-upload"></i> NIMA life Certificate</button>
+                    {this.state.fileUploadState}
+                    </div>
+                    
+                    <div>
+                    <input id="fileButton" type="file" hidden />
+                    <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}><i class="fa fa-upload"></i> Marriage Certificate</button>
+                    {this.state.fileUploadState}
+                    </div>
+
                     </div> 
                 </div>
 
