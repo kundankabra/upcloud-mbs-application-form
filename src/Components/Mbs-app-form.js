@@ -11,21 +11,6 @@ class Forms extends React.Component {
           mname: "",
           lname: "",
           gender: null,
-          dob: "",
-          altNum: "",
-          address: "",
-          acadQual: "",
-          examBody: "",
-          yearPass: "",
-          regNum: "",
-          dateReg: "",
-          nameofBoard: "",
-          practitioner: null,
-          scientificPub: null,
-          titleofPaper: "",
-          nimaBefore: null,
-          branch: null,
-          reasonDiscontinue: "",
           fileUploadState:"",
         };
         this.handleChange = this.handleChange.bind(this);
@@ -141,7 +126,7 @@ class Forms extends React.Component {
                     </div>
                     {/* date is not coming on placeholder */}
                     <div className="col-md-2 col-sm-3 col-xs-12">
-                        <input required type="date" name="dob" className="form-control Mbs-app-form_dob" />
+                        <input required type="date" name="dob" placeholder="dd-mm-yyyy" className="form-control Mbs-app-form_dob date-picker" />
                         <span>Date of Birth</span>
                     </div>
                     <div className="col-md-2 col-sm-3 col-xs-12">
@@ -295,7 +280,7 @@ class Forms extends React.Component {
                     </div>
                     {/* date is not coming on placeholder */}
                     <div className="col-sm-2 col-xs-12">
-                        <input required type="date" className="form-control" />
+                        <input required type="date" className="form-control date-picker" placeholder="dd-mm-yyyy"/>
                         <span>Date of Birth</span>
                     </div>
                     </div>     
@@ -311,31 +296,31 @@ class Forms extends React.Component {
                     {/* the above link should be included in index.html for icons */}
                     <div>
                         <input id="fileButton" type="file" hidden />
-                        <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}><i class="fa fa-upload"></i> Birth Certificate</button>
+                        <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}> Birth Certificate <i className="fa fa-upload"></i></button>
                         {this.state.fileUploadState}
                     </div>
                     
                     <div>
                         <input id="fileButton" type="file" hidden />
-                        <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}><i class="fa fa-upload"></i> Degree/Diploma Certificate</button>
+                        <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}> Degree/Diploma Certificate <i className="fa fa-upload"></i></button>
                         {this.state.fileUploadState}
                     </div>
                     
                     <div>
                     <input id="fileButton" type="file" hidden />
-                    <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}><i class="fa fa-upload"></i> Registration Certificate</button>
+                    <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}>Registration Certificate<i className="fa fa-upload"></i></button>
                     {this.state.fileUploadState}
                     </div>
 
                     <div>
                     <input id="fileButton" type="file" hidden />
-                    <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}><i class="fa fa-upload"></i> NIMA life Certificate</button>
+                    <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}> NIMA life Certificate<i className="fa fa-upload"></i> </button>
                     {this.state.fileUploadState}
                     </div>
                     
                     <div>
                     <input id="fileButton" type="file" hidden />
-                    <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}><i class="fa fa-upload"></i> Marriage Certificate</button>
+                    <button class="btn Mbs-app-form_btno" onClick={this.fileUploadButton}> Marriage Certificate<i className="fa fa-upload"></i></button>
                     {this.state.fileUploadState}
                     </div>
 
