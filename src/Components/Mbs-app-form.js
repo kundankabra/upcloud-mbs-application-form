@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Mbs-app-form.css';
+import Recaptcha from 'react-google-invisible-recaptcha';
 import {sendMbsForm} from '../DataService/MbsForm';
 
 class Forms extends React.Component {
@@ -64,9 +65,13 @@ class Forms extends React.Component {
           [e.target.name]: e.target.value });
       }
 
+      onResolved=()=>{
+        this.setState({messageSent: true});
+      }
 
     handleSubmit(e) {
         e.preventDefault();
+        this.recaptcha.execute();
         var formData = new FormData(e.target);
         const data = new FormData();
         data.append("personalFirstName",this.state.personalFirstName)
@@ -444,6 +449,11 @@ class Forms extends React.Component {
                     <button type="submit" class="btn btn-success"> Submit</button>
                 </div>
             <br/>
+            <Recaptcha
+              ref={ref=>this.recaptcha=ref}
+              sitekey="6LcS8U0aAAAAAGaOUd9LRVKHnhDBzShPHgZ8gErf"
+              onResolved={this.onResolved}
+              />
             </form>
         </div>
     )
