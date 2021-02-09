@@ -205,19 +205,19 @@ class Forms extends React.Component {
                         title="*ENTER CHARACTER VALUES ONLY"  
                         pattern="[A-Za-z]{1,32}" 
                         name="personalFirstName" id="personalFirstName"  
-                        value="lala"
+                        
                         placeholder=" "/>
                         
                         <span>First Name</span>    
                     </div>
                     <div class="col-md-2 col-sm-3 col-xs-12">
                         <input required type="text" className="form-control" onChange={this.handleChange} title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" 
-                        name="personalMiddleName" value="lala" id="personalMiddleName" placeholder=" " />
+                        name="personalMiddleName" id="personalMiddleName" placeholder=" " />
                         <span>Middle Name</span>
                     </div>
                     <div class="col-md-2 col-sm-3 col-xs-12">
                         <input required type="text" className="form-control" onChange={this.handleChange} title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" 
-                        name="personalLastName" value="lala" id="personalLastName" placeholder=" " />
+                        name="personalLastName"  id="personalLastName" placeholder=" " />
                         <span>Last Name</span>
                     </div>
                     <div className="col-md-2 col-sm-3 col-xs-12">
@@ -246,7 +246,7 @@ class Forms extends React.Component {
 
                     <div className="form-row Mbs-app-form_pd-2">
                         <div className="col-xs-12 col-sm-10">
-                        <textarea required name="personalAddress" value="lala" id="personalAddress" onChange={this.handleChange} className="form-control address" aria-label="With textarea" placeholder=" "></textarea>
+                        <textarea required name="personalAddress" id="personalAddress" onChange={this.handleChange} className="form-control address" aria-label="With textarea" placeholder=" "></textarea>
                         <span>Address</span> 
                         </div>
                         <div className="col-xs-12 col-sm-2">
@@ -261,19 +261,19 @@ class Forms extends React.Component {
                         <span>Email</span> 
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input require name="personalResidentialNumber" value="9822945195" id="personalResidentialNumber" onChange={this.handleChange} title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" type="tel" className="form-control" placeholder=" " />
+                        <input require name="personalResidentialNumber" id="personalResidentialNumber" onChange={this.handleChange} title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" type="tel" className="form-control" placeholder=" " />
                         <span>Residential Number</span> 
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input required name="personalClinicNumber" value="9822945195" id="personalClinicNumber" onChange={this.handleChange} title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" type="tel" className="form-control" placeholder=" " />
+                        <input required name="personalClinicNumber"  id="personalClinicNumber" onChange={this.handleChange} title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" type="tel" className="form-control" placeholder=" " />
                         <span>Clinic Number</span> 
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input required name="personalContactNo" value="9822945195" id="personalContactNo" onChange={this.handleChange} title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" type="tel" className="form-control" placeholder=" " />
+                        <input required name="personalContactNo"  id="personalContactNo" onChange={this.handleChange} title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" type="tel" className="form-control" placeholder=" " />
                         <span>Mobile Number</span> 
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input required name="personalAlternateNumber" value="9822945195" id="personalAlternateNumber" onChange={this.handleChange} title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" type="tel" className="form-control" placeholder=" " />
+                        <input required name="personalAlternateNumber" id="personalAlternateNumber" onChange={this.handleChange} title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" type="tel" className="form-control" placeholder=" " />
                         <span>Alternate Number</span> 
                     </div>
                     </div>
@@ -287,35 +287,35 @@ class Forms extends React.Component {
                     </div>
                     <div className="form-row Mbs-app-form_pd-1">
                     <div className="col-sm-2 col-xs-12 ">
-                        <input required name="nomineeFirstName" value="lala" id="nomineeFirstName" onChange={this.handleChange} title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" type="text" className="form-control" placeholder=" " />
+                        <input required name="nomineeFirstName" id="nomineeFirstName" onChange={this.handleChange} title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" type="text" className="form-control" placeholder=" " />
                         <span>First Name</span> 
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input required name="nomineeMiddleName" value="lala" id="nomineeMiddleName" onChange={this.handleChange} title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" type="text" className="form-control" placeholder=" " />
+                        <input required name="nomineeMiddleName"  id="nomineeMiddleName" onChange={this.handleChange} title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" type="text" className="form-control" placeholder=" " />
                         <span>Middle Name</span> 
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input required name="nomineeLastName" value="lala" id="nomineeLastName" onChange={this.handleChange} title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" type="text" className="form-control" placeholder=" " />
+                        <input required name="nomineeLastName" id="nomineeLastName" onChange={this.handleChange} title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" type="text" className="form-control" placeholder=" " />
                         <span>Last Name</span> 
                     </div>
                     <div className="col-sm-2 col-xs-12">
-                    <input required name="relationWithNominee" value="lala" id="relationWithNominee" onChange={this.handleChange} title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" type="text" className="form-control" placeholder=" " />
+                    <input required name="relationWithNominee" id="relationWithNominee" onChange={this.handleChange} title="*ENTER CHARACTER VALUES ONLY" pattern="[A-Za-z]{1,32}" type="text" className="form-control" placeholder=" " />
                         <span>Relation with Nominee</span> 
                     </div>
                     {/* date is not coming on placeholder */}
                     <div className="col-sm-2 col-xs-12">
-                        <input required name="nomineeContactNo" value="9822945195" id="nomineeContactNo" onChange={this.handleChange} type="tel" title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}"  className="form-control" placeholder=" " />
+                        <input required name="nomineeContactNo"  id="nomineeContactNo" onChange={this.handleChange} type="tel" title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}"  className="form-control" placeholder=" " />
                         <span>Mobile Number</span> 
                     </div>
                     <div className="col-sm-2 col-xs-12">
-                        <input required name="nomineeAlternateNo" value="9822945195" id="nomineeAlternateNo" onChange={this.handleChange} type="tel" title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" className="form-control" placeholder=" " />
+                        <input required name="nomineeAlternateNo"  id="nomineeAlternateNo" onChange={this.handleChange} type="tel" title="Number should be of 10 digits only" pattern="[1-9]{1}[0-9]{9}" className="form-control" placeholder=" " />
                         <span>Alternate Number</span> 
                     </div>
                     </div>
 
                     <div className="form-row Mbs-app-form_pd-2">
                         <div className="col-xs-12 col-sm-10">
-                        <textarea required name="nomineeAddress" value="lala" id="nomineeAddress" onChange={this.handleChange} className="form-control address" aria-label="With textarea" placeholder=" "></textarea>
+                        <textarea required name="nomineeAddress"  id="nomineeAddress" onChange={this.handleChange} className="form-control address" aria-label="With textarea" placeholder=" "></textarea>
                         <span>Address</span>
                         </div>
                         <div className="col-xs-12 col-sm-2">
@@ -332,22 +332,22 @@ class Forms extends React.Component {
                 </div>
                 <div className="form-row Mbs-app-form_pd-1">
                     <div className="col-sm-8 col-xs-12 ">
-                        <input required type="text" name="collegeName" value="Ohlala" id="collegeName" onChange={this.handleChange} className="form-control" placeholder=" " />
+                        <input required type="text" name="collegeName"  id="collegeName" onChange={this.handleChange} className="form-control" placeholder=" " />
                         <span>College Name</span>
                     </div>
                     <div class="col-sm-4 col-xs-12">
-                        <input required type="text" name="degree" value="Ohlala" id="degree" onChange={this.handleChange} className="form-control" placeholder=" " />
+                        <input required type="text" name="degree" id="degree" onChange={this.handleChange} className="form-control" placeholder=" " />
                         <span>Degree</span>
                     </div>
                 </div>
                 <div className="form-row Mbs-app-form_pd-2">
                     <div className="col-sm-10 col-xs-12 ">
-                        <input required type="text" name="facultyName" value="Ohlala" id="facultyName" onChange={this.handleChange} className="form-control" placeholder=" " />
+                        <input required type="text" name="facultyName" id="facultyName" onChange={this.handleChange} className="form-control" placeholder=" " />
                         <span>University/Faculty Name</span>
                     </div>
                     {/* what should be the type                */}
                     <div class="col-sm-2 col-xs-12">
-                        <input required type="number" name="yearOfPassing" value="2021" id="yearOfPassing" onChange={this.handleChange} className="form-control" placeholder=" " />
+                        <input required type="number" name="yearOfPassing"  id="yearOfPassing" onChange={this.handleChange} className="form-control" placeholder=" " />
                         <span>Year of Passing</span>
                     </div>
                 </div>
@@ -359,15 +359,15 @@ class Forms extends React.Component {
                 </div>
                 <div className="form-row Mbs-app-form_pd-1">
                     <div className="col-sm-2 col-xs-12 ">
-                        <input required type="number" name="registrationNumber" id="registrationNumber" onChange={this.handleChange} value="2021" className="form-control" placeholder=" " />
+                        <input required type="number" name="registrationNumber" id="registrationNumber" onChange={this.handleChange} className="form-control" placeholder=" " />
                         <span>Registration Number</span>
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input required type="text" name="yearOfRegistration" id="yearOfRegistration" onChange={this.handleChange} value="2021" className="form-control" placeholder=" " />
+                        <input required type="text" name="yearOfRegistration" id="yearOfRegistration" onChange={this.handleChange} className="form-control" placeholder=" " />
                         <span>Year of Registration</span>
                     </div>
                     <div class="col-sm-2 col-xs-12">
-                        <input required type="text" name="regMedicalCouncilBoard" id="regMedicalCouncilBoard" onChange={this.handleChange} value="Ohlala" className="form-control" placeholder=" " />
+                        <input required type="text" name="regMedicalCouncilBoard" id="regMedicalCouncilBoard" onChange={this.handleChange}  className="form-control" placeholder=" " />
                         <span style={{fontSize:'0.84rem'}}>Reg.Medical Council Board</span>
                     </div>
                     <div className="col-sm-2 col-xs-12">
@@ -378,7 +378,7 @@ class Forms extends React.Component {
                         </select>
                     </div>
                     <div className="col-sm-2 col-xs-12 ">
-                        <input required type="number" name="yearOfRegistration" id="yearOfRegistration" onChange={this.handleChange} value="2021" className="form-control" placeholder=" " />
+                        <input required type="number" name="yearOfRegistration" id="yearOfRegistration" onChange={this.handleChange} className="form-control" placeholder=" " />
                         <span>Membership Number</span>
                     </div>
                     {/* date is not coming on placeholder */}
