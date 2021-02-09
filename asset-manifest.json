@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/upcloud-mbs-application-form/static/css/main.cae035f5.chunk.css",
-    "main.js": "/upcloud-mbs-application-form/static/js/main.45ce470c.chunk.js",
-    "main.js.map": "/upcloud-mbs-application-form/static/js/main.45ce470c.chunk.js.map",
+    "main.js": "/upcloud-mbs-application-form/static/js/main.85f610e1.chunk.js",
+    "main.js.map": "/upcloud-mbs-application-form/static/js/main.85f610e1.chunk.js.map",
     "runtime-main.js": "/upcloud-mbs-application-form/static/js/runtime-main.23462c58.js",
     "runtime-main.js.map": "/upcloud-mbs-application-form/static/js/runtime-main.23462c58.js.map",
     "static/css/2.3cf5d70f.chunk.css": "/upcloud-mbs-application-form/static/css/2.3cf5d70f.chunk.css",
-    "static/js/2.7a3f09f1.chunk.js": "/upcloud-mbs-application-form/static/js/2.7a3f09f1.chunk.js",
-    "static/js/2.7a3f09f1.chunk.js.map": "/upcloud-mbs-application-form/static/js/2.7a3f09f1.chunk.js.map",
+    "static/js/2.c9d361e2.chunk.js": "/upcloud-mbs-application-form/static/js/2.c9d361e2.chunk.js",
+    "static/js/2.c9d361e2.chunk.js.map": "/upcloud-mbs-application-form/static/js/2.c9d361e2.chunk.js.map",
     "index.html": "/upcloud-mbs-application-form/index.html",
-    "precache-manifest.5d82a6db067ce07be43203392c62dc94.js": "/upcloud-mbs-application-form/precache-manifest.5d82a6db067ce07be43203392c62dc94.js",
+    "precache-manifest.977db75d268b7d6a6d193ecfaa7032fc.js": "/upcloud-mbs-application-form/precache-manifest.977db75d268b7d6a6d193ecfaa7032fc.js",
     "service-worker.js": "/upcloud-mbs-application-form/service-worker.js",
     "static/css/2.3cf5d70f.chunk.css.map": "/upcloud-mbs-application-form/static/css/2.3cf5d70f.chunk.css.map",
     "static/css/main.cae035f5.chunk.css.map": "/upcloud-mbs-application-form/static/css/main.cae035f5.chunk.css.map",
-    "static/js/2.7a3f09f1.chunk.js.LICENSE.txt": "/upcloud-mbs-application-form/static/js/2.7a3f09f1.chunk.js.LICENSE.txt"
+    "static/js/2.c9d361e2.chunk.js.LICENSE.txt": "/upcloud-mbs-application-form/static/js/2.c9d361e2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.23462c58.js",
     "static/css/2.3cf5d70f.chunk.css",
-    "static/js/2.7a3f09f1.chunk.js",
+    "static/js/2.c9d361e2.chunk.js",
     "static/css/main.cae035f5.chunk.css",
-    "static/js/main.45ce470c.chunk.js"
+    "static/js/main.85f610e1.chunk.js"
   ]
 }
