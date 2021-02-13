@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/upcloud-mbs-application-form/static/css/main.1129d670.chunk.css",
-    "main.js": "/upcloud-mbs-application-form/static/js/main.61c86bbd.chunk.js",
-    "main.js.map": "/upcloud-mbs-application-form/static/js/main.61c86bbd.chunk.js.map",
+    "main.js": "/upcloud-mbs-application-form/static/js/main.5267740a.chunk.js",
+    "main.js.map": "/upcloud-mbs-application-form/static/js/main.5267740a.chunk.js.map",
     "runtime-main.js": "/upcloud-mbs-application-form/static/js/runtime-main.23462c58.js",
     "runtime-main.js.map": "/upcloud-mbs-application-form/static/js/runtime-main.23462c58.js.map",
     "static/css/2.0748d538.chunk.css": "/upcloud-mbs-application-form/static/css/2.0748d538.chunk.css",
     "static/js/2.504cee66.chunk.js": "/upcloud-mbs-application-form/static/js/2.504cee66.chunk.js",
     "static/js/2.504cee66.chunk.js.map": "/upcloud-mbs-application-form/static/js/2.504cee66.chunk.js.map",
     "index.html": "/upcloud-mbs-application-form/index.html",
-    "precache-manifest.1d42936b9a5f63951918f26580c5ff48.js": "/upcloud-mbs-application-form/precache-manifest.1d42936b9a5f63951918f26580c5ff48.js",
+    "precache-manifest.a42d4c99bc85f107ef20094d33b10762.js": "/upcloud-mbs-application-form/precache-manifest.a42d4c99bc85f107ef20094d33b10762.js",
     "service-worker.js": "/upcloud-mbs-application-form/service-worker.js",
     "static/css/2.0748d538.chunk.css.map": "/upcloud-mbs-application-form/static/css/2.0748d538.chunk.css.map",
     "static/css/main.1129d670.chunk.css.map": "/upcloud-mbs-application-form/static/css/main.1129d670.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.0748d538.chunk.css",
     "static/js/2.504cee66.chunk.js",
     "static/css/main.1129d670.chunk.css",
-    "static/js/main.61c86bbd.chunk.js"
+    "static/js/main.5267740a.chunk.js"
   ]
 }
