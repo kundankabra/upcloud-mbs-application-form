@@ -1,8 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Mbs-app-form.css';
+// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+import "react-datepicker/dist/react-datepicker.css";
 import Recaptcha from 'react-google-invisible-recaptcha';
 import {sendMbsForm} from '../DataService/MbsForm';
+import DatePicker from "react-datepicker";
+
+
 
 class Forms extends React.Component {
     constructor() {
@@ -58,6 +63,17 @@ class Forms extends React.Component {
         };
         this.handleChange = this.handleChange.bind(this);
        this.handleSubmit = this.handleSubmit.bind(this);
+       this.handleDateChange = this.handleDateChange.bind(this);
+       this.range = this.range.bind(this);
+       this.handleEnrollDateChange = this.handleEnrollDateChange.bind(this)
+      }
+
+      handleDateChange(d){
+          this.setState({personalDateOfBirth:d})
+      }
+
+      handleEnrollDateChange(d){
+          this.setState({dateOfEnrollment:d})
       }
 
       handleChange(e) {
@@ -120,7 +136,6 @@ class Forms extends React.Component {
         });
       }
 
-    
 
     // for handling file upload ----------
     
@@ -176,10 +191,33 @@ class Forms extends React.Component {
         }
     }
 
-
-      
+    range(start, end) {
+        var ans = [];
+        for (let i = start; i <= end; i++) {
+            ans.push(i);
+        }
+        return ans;
+    }
     
     render() {
+
+      var d = new Date();  
+      const years = this.range(1940, 2021);
+      console.log("range",years)
+      const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ];
     return (
         <div className="container Mbs-app-form_container">
             <div className="row">   
@@ -234,8 +272,71 @@ class Forms extends React.Component {
                     </div>
                     {/* date is not coming on placeholder */}
                     <div className="col-md-2 col-sm-3 col-xs-12">
-                        <input required type="date" onChange={this.handleChange} name="personalDateOfBirth" id="personalDateOfBirth" placeholder="dd-mm-yyyy" className="form-control Mbs-app-form_dob date-picker" />
-                        <span>Date of Birth</span>
+                        {/* <input required type="date" onChange={this.handleChange} name="personalDateOfBirth" id="personalDateOfBirth" placeholder="dd-mm-yyyy" className="form-control Mbs-app-form_dob date-picker" />
+                        <span>Date of Birth</span> */}
+                            {/* <DatePicker
+                                selected={this.state.personalDateOfBirth}
+                               // onSelect={handleDateSelect} //when day is clicked
+                                onChange={this.handleDateChange} //only when value has changed
+                            /> */}
+                            
+                            <DatePicker
+                                renderCustomHeader={({
+                                    date,
+                                    changeYear,
+                                    changeMonth,
+                                    decreaseMonth,
+                                    increaseMonth,
+                                    prevMonthButtonDisabled,
+                                    nextMonthButtonDisabled
+                                }) => (
+                                    <div
+                                        style={{
+                                            margin: 10,
+                                            display: "flex",
+                                            justifyContent: "center"
+                                        }}
+                                    >
+                                        <button onClick={decreaseMonth} disabled={prevMonthButtonDisabled}>
+                                            {"<"}
+                                        </button>
+                                        <select
+                                            value={d.getYear(date)}
+                                            onChange={({ target: { value } }) => changeYear(value)}
+                                        >
+                                            {years.map(option => (
+                                                <option key={option} value={option}>
+                                                    {option}
+                                                </option>
+                                            ))}
+                                        </select>
+
+                                        <select
+                                            value={months[d.getMonth(date)]}
+                                            onChange={({ target: { value } }) =>
+                                                changeMonth(months.indexOf(value))
+                                            }
+                                        >
+                                            {months.map(option => (
+                                                <option key={option} value={option}>
+                                                    {option}
+                                                </option>
+                                            ))}
+                                        </select>
+
+                                        <button onClick={increaseMonth} disabled={nextMonthButtonDisabled}>
+                                            {">"}
+                                        </button>
+                                    </div>
+                                )}
+                               
+                                selected={this.state.personalDateOfBirth}
+                                onChange={this.handleDateChange}
+                                className="personalDOB"
+                                placeholderText="Date of Birth"
+                            > 
+                            </DatePicker>
+
                     </div>
                     <div className="col-md-2 col-sm-3 col-xs-12">
                         <select required class="form-control" name="personalAge" id="personalAge" onChange={this.handleChange} id="age">
@@ -388,8 +489,65 @@ class Forms extends React.Component {
                     </div>
                     {/* date is not coming on placeholder */}
                     <div className="col-sm-2 col-xs-12">
-                        <input required type="date" name="dateOfEnrollment" id="dateOfEnrollment" onChange={this.handleChange}  className="form-control date-picker" placeholder="dd-mm-yyyy"/>
-                        <span>Date of Enrollment</span>
+                        {/* <input required type="date" name="dateOfEnrollment" id="dateOfEnrollment" onChange={this.handleChange}  className="form-control date-picker" placeholder="dd-mm-yyyy"/>
+                        <span>Date of Enrollment</span> */}
+                         <DatePicker
+                                renderCustomHeader={({
+                                    date,
+                                    changeYear,
+                                    changeMonth,
+                                    decreaseMonth,
+                                    increaseMonth,
+                                    prevMonthButtonDisabled,
+                                    nextMonthButtonDisabled
+                                }) => (
+                                    <div
+                                        style={{
+                                            margin: 10,
+                                            display: "flex",
+                                            justifyContent: "center"
+                                        }}
+                                    >
+                                        <button onClick={decreaseMonth} disabled={prevMonthButtonDisabled}>
+                                            {"<"}
+                                        </button>
+                                        <select
+                                            value={d.getYear(date)}
+                                            onChange={({ target: { value } }) => changeYear(value)}
+                                        >
+                                            {years.map(option => (
+                                                <option key={option} value={option}>
+                                                    {option}
+                                                </option>
+                                            ))}
+                                        </select>
+
+                                        <select
+                                            value={months[d.getMonth(date)]}
+                                            onChange={({ target: { value } }) =>
+                                                changeMonth(months.indexOf(value))
+                                            }
+                                        >
+                                            {months.map(option => (
+                                                <option key={option} value={option}>
+                                                    {option}
+                                                </option>
+                                            ))}
+                                        </select>
+
+                                        <button onClick={increaseMonth} disabled={nextMonthButtonDisabled}>
+                                            {">"}
+                                        </button>
+                                    </div>
+                                )}
+                               
+                                selected={this.state.dateOfEnrollment}
+                                onChange={this.handleEnrollDateChange}
+                                className="personalDOB"
+                                placeholderText="Date of Enrollment"
+                            > 
+                            </DatePicker>
+
                     </div>
                     </div>     
                 </div>      

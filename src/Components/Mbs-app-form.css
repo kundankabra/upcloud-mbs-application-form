@@ -13,6 +13,18 @@
     margin-top: 63px;
 }
 
+.personalDOB{
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #390969;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #CADEEF;
+    border-radius: .50rem;
+}
+
 .Mbs-app-form_main-heading{
     font-size: 45px;
     font-weight: 300;
@@ -112,13 +124,15 @@ span {
 }
 
 .upload{
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Mbs-app-form_btno {
-    width: 96%;
-    padding: .375rem .75rem;
+    width: 90%;
+    padding: .375rem .25rem;
     font-size: 1rem;
     line-height: 1.5;
     color:#390969;
@@ -141,7 +155,8 @@ span {
 
 .Mbs-app-form_submit{
     margin-top: 90px;
-    padding-left: 31rem;
+   display: flex;
+   justify-content: center;
 }
 
 .Mbs-app-form_view-form{
@@ -267,7 +282,6 @@ span {
 
     .Mbs-app-form_submit{
         margin-top: 90px;
-        padding-left: 1rem;
     }
     
     .Mbs-app-form_view-form{
