@@ -60,6 +60,8 @@ class Forms extends React.Component {
           marriageCertificate:null,  
           marriageCertificateName:"",
           fileUploadState:"",
+          selectYear:"2021",
+          selectMonth:"January"
         };
         this.handleChange = this.handleChange.bind(this);
        this.handleSubmit = this.handleSubmit.bind(this);
@@ -301,8 +303,12 @@ class Forms extends React.Component {
                                             {"<"}
                                         </button>
                                         <select
-                                            value={d.getYear(date)}
-                                            onChange={({ target: { value } }) => changeYear(value)}
+                                            value={this.state.selectYear}
+                                            onChange={({ target: { value } }) => {
+                                            changeYear(value)
+                                            this.setState({selectYear:value})
+                                        }
+                                        }
                                         >
                                             {years.map(option => (
                                                 <option key={option} value={option}>
@@ -312,9 +318,11 @@ class Forms extends React.Component {
                                         </select>
 
                                         <select
-                                            value={months[d.getMonth(date)]}
-                                            onChange={({ target: { value } }) =>
+                                            value={this.state.selectMonth}
+                                            onChange={({ target: { value } }) =>{
                                                 changeMonth(months.indexOf(value))
+                                                this.setState({selectMonth:value})
+                                            }
                                             }
                                         >
                                             {months.map(option => (
@@ -512,9 +520,12 @@ class Forms extends React.Component {
                                             {"<"}
                                         </button>
                                         <select
-                                            value={d.getYear(date)}
-                                            onChange={({ target: { value } }) => changeYear(value)}
-                                        >
+                                            value={this.state.selectYear}
+                                            onChange={({ target: { value } }) =>{ changeYear(value)
+                                            this.setState({selectYear:value})
+                                            }
+                                        }
+                                            >
                                             {years.map(option => (
                                                 <option key={option} value={option}>
                                                     {option}
@@ -523,9 +534,11 @@ class Forms extends React.Component {
                                         </select>
 
                                         <select
-                                            value={months[d.getMonth(date)]}
-                                            onChange={({ target: { value } }) =>
+                                            value={this.state.selectMonth}
+                                            onChange={({ target: { value } }) =>{
                                                 changeMonth(months.indexOf(value))
+                                                this.setState({selectMonth:value})
+                                            }
                                             }
                                         >
                                             {months.map(option => (
