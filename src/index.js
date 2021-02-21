@@ -8,6 +8,7 @@ import Forms from './Components/Mbs-app-form'
 ReactDOM.render(
   <React.StrictMode>
     <Forms />
+    <div className="footer_upcloud">Powered by Upcloud Technology Pvt. Ltd.</div>
   </React.StrictMode>,
   document.getElementById('root')
 );
