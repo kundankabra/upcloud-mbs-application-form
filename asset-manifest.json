@@ -5,19 +5,19 @@
     "main.js.map": "/upcloud-mbs-application-form/static/js/main.b6f2721e.chunk.js.map",
     "runtime-main.js": "/upcloud-mbs-application-form/static/js/runtime-main.23462c58.js",
     "runtime-main.js.map": "/upcloud-mbs-application-form/static/js/runtime-main.23462c58.js.map",
-    "static/css/2.0748d538.chunk.css": "/upcloud-mbs-application-form/static/css/2.0748d538.chunk.css",
+    "static/css/2.1d7fc9d1.chunk.css": "/upcloud-mbs-application-form/static/css/2.1d7fc9d1.chunk.css",
     "static/js/2.504cee66.chunk.js": "/upcloud-mbs-application-form/static/js/2.504cee66.chunk.js",
     "static/js/2.504cee66.chunk.js.map": "/upcloud-mbs-application-form/static/js/2.504cee66.chunk.js.map",
     "index.html": "/upcloud-mbs-application-form/index.html",
-    "precache-manifest.ef229d7d23ab44f4cd6ab1ac10ff0442.js": "/upcloud-mbs-application-form/precache-manifest.ef229d7d23ab44f4cd6ab1ac10ff0442.js",
+    "precache-manifest.712ddf37a67a1edb28301a286719c3f4.js": "/upcloud-mbs-application-form/precache-manifest.712ddf37a67a1edb28301a286719c3f4.js",
     "service-worker.js": "/upcloud-mbs-application-form/service-worker.js",
-    "static/css/2.0748d538.chunk.css.map": "/upcloud-mbs-application-form/static/css/2.0748d538.chunk.css.map",
+    "static/css/2.1d7fc9d1.chunk.css.map": "/upcloud-mbs-application-form/static/css/2.1d7fc9d1.chunk.css.map",
     "static/css/main.e54cf53b.chunk.css.map": "/upcloud-mbs-application-form/static/css/main.e54cf53b.chunk.css.map",
     "static/js/2.504cee66.chunk.js.LICENSE.txt": "/upcloud-mbs-application-form/static/js/2.504cee66.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.23462c58.js",
-    "static/css/2.0748d538.chunk.css",
+    "static/css/2.1d7fc9d1.chunk.css",
     "static/js/2.504cee66.chunk.js",
     "static/css/main.e54cf53b.chunk.css",
     "static/js/main.b6f2721e.chunk.js"

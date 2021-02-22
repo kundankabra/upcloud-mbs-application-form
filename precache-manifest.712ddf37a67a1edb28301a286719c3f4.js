@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56977292f763b69ad107f5cafa1f4f47",
+    "revision": "3b4b0f5aa5b04f572c4e19875db9713d",
     "url": "/upcloud-mbs-application-form/index.html"
   },
   {
-    "revision": "18cff94711b3031b05f9",
-    "url": "/upcloud-mbs-application-form/static/css/2.0748d538.chunk.css"
+    "revision": "8e032d3f28631a364629",
+    "url": "/upcloud-mbs-application-form/static/css/2.1d7fc9d1.chunk.css"
   },
   {
     "revision": "9ae48f539df26438f38c",
     "url": "/upcloud-mbs-application-form/static/css/main.e54cf53b.chunk.css"
   },
   {
-    "revision": "18cff94711b3031b05f9",
+    "revision": "8e032d3f28631a364629",
     "url": "/upcloud-mbs-application-form/static/js/2.504cee66.chunk.js"
   },
   {
